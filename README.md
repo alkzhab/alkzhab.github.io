@@ -1,1 +1,519 @@
-# alkzhab.github.io
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkhastov - Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="menu">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#competence">Compétences</a>
+                <a href="#skills">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <p class="welcome">Bienvenue</p>
+            <h1>Je suis <span>Étudiant en BUT Informatique</span></h1>
+            <p class="subtitle">à l'IUT de Gustave Eiffel à Champs-sur-Marne</p>
+            <a href="#about" class="scroll-down">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+        <div class="bottom-fade"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos</h2>
+                <p class="section-subtitle">En savoir plus sur moi</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Je suis <span class="highlight">Alkhastov Zhabrail</span>, étudiant en 1<sup>re</sup> année de BUT Informatique à l'Université Gustave Eiffel à Champs-sur-Marne</h3>
+                    
+                    <p>Passionné par la technologie et les innovations numériques, j'ai choisi ce parcours pour développer des compétences en informatique notamment en programmation en apprenant divers langages de programmation.</p>
+                    
+                    <p>Ce que j'aime dans ce domaine, c'est de concevoir et développer des projets technologiques, qu'il s'agisse de jeux, d'application ou de solutions sur mesure.</p>
+                    
+                    <p>Curieux et motivé, je souhaite approfondir mes connaissances en programmation et développer des projets complexes pour élargir mes horizons dans ce domaine. À l'avenir, j'aimerai me spécialiser en cybersécurité et contribuer à protéger les systèmes et les données contre les menaces en ligne.</p>
+                </div>
+                
+                <div class="about-info">
+                    <h3>Informations personnelles</h3>
+                    
+                    <ul>
+                        <li><span>Nom:</span> Alkhastov Zhabrail</li>
+                        <li><span>Email:</span> <a href="mailto:alk.zhabrail@gmail.com">alk.zhabrail@gmail.com</a></li>
+                        <li><span>Âge:</span> 18</li>
+                        <li><span>Ville:</span> Noisy-le-Grand 93160</li>
+                        <li><span>Université:</span> Gustave Eiffel</li>
+                    </ul>
+                    
+                    <a href="Alkhastov_CV.pdf" class="btn-download">Télécharger CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competence" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes compétences</h2>
+                <p class="section-subtitle">Mon savoir faire</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Programmation</h3>
+                    <p>Utilisation de langages de programmation telle que Python, C++, Bash, Java.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Conception Web</h3>
+                    <p>Utilisation de langages Web : HTML, CSS, JavaScript et PHP.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>Base de données</h3>
+                    <p>Conception et gestion de bases de données telle que phpMyAdmin et PostgreSQL.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                    </div>
+                    <h3>Systèmes d'exploitation</h3>
+                    <p>Maîtrise de Windows et de Linux.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mes Travaux</h2>
+                <p class="section-subtitle">Mes Projets</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Python</h3>
+                    <p>Programmation d'un jeu vidéo.</p>
+                    <a href="#python" class="btn">En savoir plus</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>SQL</h3>
+                    <p>Création et gestion de bases de données relationnelles.</p>
+                    <a href="#sql" class="btn">En savoir plus</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>DualBoot</h3>
+                    <p>Configuration et gestion de plusieurs systèmes d'exploitation.</p>
+                    <a href="#dualboot" class="btn">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Application Web</h3>
+                    <p>Programmation d'une application web.</p>
+                    <a href="#application" class="btn">En savoir plus</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Java</h3>
+                    <p>Programmetion d'un jeu sur Java.</p>
+                    <a href="#java" class="btn">En savoir plus</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>JavaFX</h3>
+                    <p>Programmation d'une application de création de pizza sur JavaFX.</p>
+                    <a href="#javafx" class="btn">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Site Web</h3>
+                    <p>Programmation d'un site web.</p>
+                    <a href="#muraille_de_chine" class="btn">En savoir plus</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>PHP</h3>
+                    <p>Programmation d'un site web dynamique.</p>
+                    <a href="#php" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="python" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Python</h2>
+                <h3>Programmation d'un jeu vidéo</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet</h3>
+                    <p>Le projet Tetris a été développé en Python en utilisant la bibliothèque FLTK, une bibliothèque graphique légère qui m'a permis de me concentrer sur la logique du jeu tout en créant une interface fluide.</p>
+                    <p>Une des premières étapes du projet a été de coder le jeu de base, où les pièces tombaient toutes les secondes. Une fois cette version fonctionnelle, j'ai cherché à améliorer l'expérience utilisateur en ajoutant un menu principal. Ce menu permet aux joueurs la partie qu'il voulait jouer, il a le choix entre le jeu de base, le mode 2 joueurs et une variante du jeu.</p>
+                    <p>Le défi majeur que j'ai rencontré était la gestion du mouvement des pièces et la détection des collisions. Après quelques ajustements, j'ai réussi à implémenter une logique permettant aux pièces de se déplacer et de se fixer correctement lorsqu'elles atteignent le bas de l'écran.</p>
+                    <p>Ensuite, j'ai décidé d'ajouter un mode multijoueur pour rendre le jeu plus amusant. Cela a impliqué la gestion des entrées clavier pour chaque joueur et la synchronisation de leurs actions à l'écran. Le jeu est devenu beaucoup plus dynamique et interactif avec cette fonctionnalité.</p>
+                    <p>Enfin, pour permettre aux joueurs de reprendre leurs parties, j'ai intégré une fonction de sauvegarde et de reprise, un ajout qui rend le jeu plus pratique et agréable à jouer.</p>
+                    <p>En conclusion, ce projet m'a permis de renforcer mes compétences en programmation, en particulier dans la gestion des interfaces graphiques et de la logique de jeu. À l'avenir, je prévois d'ajouter de nouvelles fonctionnalités.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/tetris_code.png" alt="Capture d'écran code">
+                        <img src="images/tetris_code2.png" alt="Capture d'écran code 2">
+                        <img src="images/menu.png" alt="Capture d'écran menu">
+                        <img src="images/tetris.png" alt="Capture d'écran jeu">
+                        <img src="images/pause.png" alt="Capture d'écran pause">
+                        <img src="images/multijoueur.png" alt="Capture d'écran multijoueurs">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sql" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Projet SQL</h2>
+                <h3>Création et gestion d'une base de données relationnelle</h3>
+                <p>Un projet réalisé dans le cadre de mes études en informatique, où j'ai conçu et implémenté une base de données relationnelle pour gérer des informations de manière structurée et efficace.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet</h3>
+                    <p>Le projet SQL m'a permis d'acquérir des compétences solides dans la création et la gestion de bases de données. Une des premières étapes a été d'analyser les besoins du système et de concevoir un schéma entité-association détaillé.</p>
+                    <p>Ensuite, j'ai utilisé des outils comme MySQL pour transformer ce schéma en tables relationnelles, en veillant à normaliser les données afin de minimiser les redondances et les anomalies.</p>
+                    <p>Un des défis majeurs du projet a été l'optimisation des requêtes pour s'assurer qu'elles fonctionnaient efficacement, même avec de grandes quantités de données.</p>
+                    <p>Enfin, j'ai testé la base de données en simulant des scénarios réels pour m'assurer qu'elle répondait aux besoins définis. Cela a inclus la gestion des droits d'accès, la sauvegarde des données et l'exécution de requêtes complexes pour produire des rapports.</p>
+                    <p>Ce projet m'a donné une meilleure compréhension des bases de données relationnelles et des langages de requête, tout en renforçant mes compétences en résolution de problèmes et en optimisation de systèmes.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/MCD.PNG" alt="Schéma entité-association">
+                        <img src="images/myadmin.jpg" alt="Requêtes SQL">
+                        <img src="images/requete.png" alt="myadmin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dualboot" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>DualBoot</h2>
+                <h3>Configuration et gestion de plusieurs systèmes d'exploitation</h3>
+                <p>Un projet réalisé dans le cadre de mes études en informatique, où j'ai installé et configuré un système DualBoot avec Linux et Windows.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet</h3>
+                    <p>Le projet DualBoot m'a permis d'acquérir une expertise dans la configuration d'un système utilisant à la fois Linux et Windows. L'un des principaux défis a été de gérer l'installation de Linux sans perturber l'existant Windows et de configurer correctement le chargeur de démarrage GRUB.</p>
+                    <p>J'ai commencé par sauvegarder mes données avant de procéder au partitionnement de mon disque dur, en créant une partition dédiée pour Linux. Après l'installation de Linux, j'ai dû configurer GRUB pour qu'il détecte les deux systèmes d'exploitation et m'offre une interface de démarrage me permettant de choisir entre Linux et Windows.</p>
+                    <p>Le plus grand défi a été de résoudre des problèmes liés à la compatibilité des pilotes et à la gestion des partitions de disque dur entre les deux systèmes. J'ai également exploré l'utilisation d'outils comme GParted pour gérer efficacement les partitions et assurer une bonne utilisation de l'espace disque.</p>
+                    <p>Enfin, j'ai testé les fonctionnalités du DualBoot pour m'assurer que les deux systèmes fonctionnaient correctement sans interférer les uns avec les autres. J'ai également intégré un environnement de développement commun, afin de faciliter l'accès aux outils nécessaires pour les deux systèmes.</p>
+                    <p>Ce projet m'a permis de mieux comprendre les différents aspects techniques de l'installation et de la gestion de plusieurs systèmes d'exploitation sur une même machine, tout en garantissant une expérience utilisateur optimale.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/OS.avif" alt="Linux et Windows">
+                        <img src="images/ubuntu.png" alt="Ubuntu">
+                        <img src="images/grub.webp" alt="Capture d'écran GRUB">
+                        <img src="images/partitionnement.png" alt="Capture d'écran partiionnement">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Senior Meet</h2>
+                <h3>Programmation d'une application web</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet</h3>
+                    <p>Senior Meet est une application de messagerie web conçue spécifiquement pour les personnes âgées. L’objectif principal était de proposer une interface simple, accessible et sécurisée, afin de faciliter la communication entre seniors, amis et membres de la famille.</p>
+                    <p>Le projet a été développé en HTML, CSS, PHP et JavaScript.</p>
+                    <p>Une des fonctionnalités essentielles que j’ai intégrées est le système de messagerie en temps réel. Pour cela, j’ai utilisé AJAX et PHP côté serveur, afin que les utilisateurs puissent envoyer et recevoir des messages instantanément sans recharger la page.</p>
+                    <p>Un autre aspect important du projet était la gestion des comptes utilisateurs. J’ai mis en place un système d’inscription et de connexion sécurisé, avec vérification des données et cryptage des mots de passe, pour garantir la confidentialité des échanges.</p>
+                    <p>Ce projet m’a permis de développer mes compétences en programmation web, en sécurité informatique, et en conception d’interfaces accessibles. Il m’a également sensibilisé à l’importance de l’inclusion numérique. À l’avenir, j’aimerais enrichir l’application avec des appels vidéo et un accompagnement vocal pour les utilisateurs.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/code_senior.PNG" alt="Capture d'écran code">
+                        <img src="images/login_seniormeet.PNG" alt="Capture d'écran code 2">
+                        <img src="images/calendrier_senior.PNG" alt="Capture d'écran menu">
+                        <img src="images/code2_senior.PNG" alt="Capture d'écran jeu">
+                        <img src="images/discussion_senior.PNG" alt="Capture d'écran pause">
+                        <video controls width="100%" poster="images/apercu_video.png">
+                            <source src="images/Senior_meet.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo HTML5.
+                        </video>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="java" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Yam's</h2>
+                <h3>Programmation du jeu Yam's sur Java</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet - Jeu Yam's en Java</h3>
+                    <p>J'ai développé un jeu de Yam's en langage Java dans le cadre de mes études. Ce projet consistait à reproduire ce célèbre jeu de dés avec une interface graphique simple et une logique de jeu complète.</p>
+                    <p>Le développement s'est focalisé sur la gestion des règles du Yam's, le lancement des dés, le choix des combinaisons et le calcul automatique des scores selon les règles officielles. J'ai implémenté une interface utilisateur en Swing pour rendre l'expérience intuitive et interactive.</p>
+                    <p>Un des défis majeurs a été de gérer la logique du tour de jeu, les différentes phases de lancer, et le stockage des résultats, tout en offrant une interface claire pour que l'utilisateur puisse facilement choisir quels dés relancer ou conserver.</p>
+                    <p>Ce projet m'a permis de renforcer mes compétences en programmation orientée objet, gestion d'événements, et conception d'interfaces graphiques en Java. J'ai également appris à structurer un programme complexe et à gérer les interactions utilisateur de façon fluide.</p>
+                 </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/code_yams.png" alt="Capture d'écran code">
+                        <img src="images/code2_yams.png" alt="Capture d'écran code 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="javafx" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>CUSTOMIZZA</h2>
+                <h3>Programmation d'une application de création de pizza sur JavaFX</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet - Cutomizza : application de création de pizzas en JavaFX</h3>
+                    <p>Cutomizza est une application développée en JavaFX qui permet à l'utilisateur de créer sa propre pizza en choisissant parmi différentes options d'ingrédients, tailles et types de pâte.</p>
+                    <p>L'objectif était de proposer une interface graphique conviviale et interactive où les utilisateurs peuvent composer leur pizza en temps réel, voir le prix se mettre à jour automatiquement en fonction des choix, et visualiser un aperçu de leur création.</p>
+                    <p>J'ai conçu l'interface avec JavaFX pour tirer parti de ses capacités graphiques et faciliter la gestion des événements liés aux sélections des ingrédients. Le projet intègre également une logique métier pour calculer dynamiquement le coût total et vérifier la validité des combinaisons.</p>
+                    <p>Ce projet m'a permis d'améliorer mes compétences en programmation orientée objet, en conception d'interface utilisateur avec JavaFX, ainsi qu'en gestion des événements et des données utilisateur.</p>
+                 </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/login_customizza.png" alt="Capture d'écran code">
+                        <img src="images/accueil_customizza.png" alt="Capture d'écran code 2">
+                        <img src="images/code_customizza.png" alt="Capture d'écran menu">
+                        <img src="images/code2_customizza.png" alt="Capture d'écran jeu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="muraille_de_chine" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>La Grande Muraille de Chine</h2>
+                <h3>Programmation d'un site web sur la Grande Muraille de Chine en partenariat avec l'UNESCO</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Mon projet - Site web sur la Grande Muraille de Chine en partenariat avec l'UNESCO</h3>
+                    <p>Dans le cadre d’un partenariat avec l’UNESCO, j’ai développé un site web dédié à la Grande Muraille de Chine. Ce site vise à valoriser ce patrimoine historique exceptionnel en offrant un contenu riche et accessible à différents types de visiteurs.</p>
+                    <p>J’ai conçu deux sections principales : une partie "Histoire" destinée aux curieux et passionnés, qui présente de manière détaillée les origines, la construction, et l’importance culturelle de la muraille à travers le temps.</p>
+                    <p>La seconde partie, intitulée "Voyage", s’adresse aux touristes et voyageurs. Elle propose des informations pratiques, des conseils pour visiter la muraille, ainsi que des suggestions d’itinéraires et d’activités à proximité.</p>
+                    <p>Le site a été développé en HTML, CSS, et JavaScript pour garantir une navigation fluide et une expérience utilisateur agréable, avec une mise en page responsive adaptée à tous les écrans.</p>
+                    <p>Ce projet m’a permis de travailler sur la gestion de contenus variés, l’ergonomie web, et l’intégration de médias pour rendre la visite virtuelle attractive. J’ai également appris à adapter le contenu pour différents publics.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/accueil_muraille.png" alt="Capture d'écran code">
+                        <img src="images/voyage_muraille.png" alt="Capture d'écran code 2">
+                        <img src="images/histoire_muraille.png" alt="Capture d'écran menu">
+                        <img src="images/section_muraille.png" alt="Capture d'écran jeu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="php" class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <h2>Zarza-Ski</h2>
+                <h3>Création d’un site web de réservation de séjours au ski</h3>
+                <p>Un projet que j'ai réalisé dans le cadre de mes études en informatique.</p>
+            </div>
+
+            <div class="project-content">
+                <div class="project-description">
+                    <p>Dans le cadre d’un projet académique, j’ai développé un site web pour Zarza-Ski, une entreprise spécialisée dans l’organisation de séjours à la montagne. Le site permet aux utilisateurs de réserver facilement leurs vacances au ski en ligne.</p>
+                    <p>J'ai conçu une section "Réservation" permet aux utilisateurs de choisir leurs dates de séjour, le type d’hébergement, les équipements à louer, et d’effectuer leur réservation en ligne de manière simple et sécurisée.</p>
+                    <p>Le site a été développé en HTML, CSS, JavaScript, et PHP afin d’assurer une navigation fluide et responsive sur tous les types d’appareils, du mobile à l’ordinateur. PHP a été utilisé côté serveur pour gérer la logique métier, notamment le traitement des réservations, la création de comptes utilisateurs, et la gestion des sessions.</p>
+                    <p>Une base de données MySQL a été mise en place pour stocker toutes les informations essentielles : profils des clients, réservations effectuées, détails des séjours, et disponibilités des hébergements.</p>
+                    <p>Ce projet m’a permis de travailler sur l’ergonomie d’un site transactionnel, la gestion de formulaires dynamiques, et l’intégration de contenus interactifs pour offrir une expérience utilisateur intuitive et agréable, tout en assurant une gestion efficace et automatisée des réservations via le back-end.</p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-grid">
+                        <img src="images/accueil_ski.PNG" alt="Capture d'écran code">
+                        <img src="images/reservation_ski.PNG" alt="Capture d'écran code 2">
+                        <img src="images/prix_ski.PNG" alt="Capture d'écran menu">
+                        <img src="images/code_ski.PNG" alt="Capture d'écran jeu">
+                        <img src="images/bdd_ski.PNG" alt="Capture d'écran jeu">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Contactez-moi</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>ADDRESSE</h3>
+                    <p>1 rue Victor Baltard,<br>Noisy-le-Grand 93160</p>
+                    <p><strong>Numéro:</strong> 0745327941</p>
+                    <p><strong>Email:</strong> <a href="mailto:alk.zhabrail@gmail.com">alk.zhabrail@gmail.com</a></p>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Écrivez-moi</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nom" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea name="message" rows="5" placeholder="Texte" required></textarea>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.100535404974!2d2.5826950768908126!3d48.83722100219536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1735494327232!5m2!1sfr!2sfr" 
+                    width="800" 
+                    height="300" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2024 <a href="#">Alkhastov</a>. Tout droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const menu = document.querySelector('.menu');
+            const navbar = document.getElementById('navbar');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                mobileMenuBtn.classList.toggle('active');
+            });
+            
+            // Navigation fluide
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Fermer le menu mobile après la navigation
+                        menu.classList.remove('active');
+                        mobileMenuBtn.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Effet de scroll pour la navbar
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 10) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
