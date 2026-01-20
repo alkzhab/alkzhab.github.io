@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alkhastov Zhabrail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    
+    <div class="background-glow"></div>
+    <div class="background-glow-2"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <button class="nav-btn active" data-target="accueil"><i class="fas fa-home"></i> <span class="nav-text">Accueil</span></button>
+            <button class="nav-btn" data-target="apropos"><i class="fas fa-user"></i> <span class="nav-text">À propos</span></button>
+            <button class="nav-btn" data-target="connaissances"><i class="fas fa-code"></i> <span class="nav-text">Stack</span></button>
+            <button class="nav-btn" data-target="travaux"><i class="fas fa-layer-group"></i> <span class="nav-text">Projets</span></button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="section active-section">
+            <div class="hero-container">
+                <div class="hero-text-side">
+                    <div class="badge">Recherche de stage dès Avril 2026 (8 semaines min)</div>
+                    <h1>Alkhastov <br> <span class="gradient-text">Zhabrail</span></h1>
+                    
+                    <h2 class="typing-container"> Je suis <span class="txt-type" data-wait="3000" data-words='["Étudiant en BUT Informatique", "Passionné par le développement web", "Rigoureux, curieux et force de proposition"]'></span></h2>
+                    
+                    <p class="description">Étudiant à l'IUT Gustave Eiffel. Je conçois des solutions sécurisées et innovantes pour le web de demain.</p>
+                    <p class="description">Je recherche un stage de <strong>8 semaines minimum</strong> à partir d'avril 2026, pour mettre mes compétences en pratique, créer des projets concrets et continuer à apprendre.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="cta-btn primary" onclick="document.querySelector('[data-target=\'travaux\']').click()">Mes Projets</button>
+                        <button class="cta-btn secondary" onclick="document.querySelector('[data-target=\'apropos\']').click()">Qui suis-je ?</button>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/alkzhab" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/zhabrail-alkhastov-88ba26366/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:alk.zhabrail@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual-side">
+                    <div class="blob-animation">
+                        <div class="blob-content">
+                           <i class="fas fa-terminal" style="font-size: 5rem; color: white;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section">
+            <h2 class="section-title">À propos de moi</h2>
+            
+            <div class="bento-grid">
+    
+                <div class="bento-col-main">
+                    
+                    <div class="bento-card bio-card">
+                        <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+                        <h3><i class="fas fa-regular fa-user"></i> Mon Profil</h3>
+                        <p>
+                            Je m'appelle <strong>Alkhastov Zhabrail</strong>, étudiant en 2<sup>ème</sup> année de BUT Informatique à l'Université Gustave Eiffel.
+                            <br><br>
+                            Passionné par la technologie et les innovations numériques, j'ai choisi ce parcours pour développer des compétences en informatique notamment en programmation en apprenant divers langages de programmation.
+                            <br><br>
+                            Ce que j'aime dans ce domaine, c'est de concevoir et développer des projets technologiques, qu'il s'agisse de jeux, d'application ou de solutions sur mesure.
+                            <br><br>
+                            Curieux et motivé, je souhaite approfondir mes connaissances en programmation et développer des projets complexes pour élargir mes horizons dans ce domaine.
+                       </p>
+                    </div>
+
+                    <div class="bento-card goal-card">
+                        <h3><i class="fas fa-search-location"></i> Recherche de Stage - BUT 2</h3>
+                        
+                        <p style="margin-bottom: 20px; color: var(--text-main);">
+                            Je recherche un stage de <strong>8 semaines minimum</strong> (à partir de 280h).
+                            <br>
+                            <i class="far fa-calendar-alt" style="color:var(--primary)"></i> <strong>Disponibilité :</strong> Du début des vacances d'avril jusqu'au 31 août 2026.
+                            <br><br>
+                            S'inscrivant dans le parcours <strong>"Réalisation d'applications"</strong>, je suis prêt à intégrer une équipe pour :
+                        </p>
+
+                        <ul class="skill-list" style="margin-top:0;">
+                            <li>
+                                <i class="fas fa-code"></i> 
+                                <span><strong>Conception & Développement :</strong> Créer, coder et intégrer des solutions (Web, Logiciel, Mobile) répondant aux besoins clients.</span>
+                            </li>
+                            
+                            <li>
+                                <i class="fas fa-tachometer-alt"></i> 
+                                <span><strong>Qualité & Performance :</strong> Tests unitaires, maintenance logicielle et optimisation (temps d'exécution, ressources).</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-database"></i> 
+                                <span><strong>Gestion des Données :</strong> Exploitation et administration de bases de données pour le pilotage de l'activité.</span>
+                            </li>
+
+                            <li>
+                                <i class="fas fa-users-cog"></i> 
+                                <span><strong>Gestion de Projet :</strong> Participation active aux rituels d'équipe (Méthodes Agiles / Scrum) et support utilisateurs.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bento-card edu-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Ma Formation</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2024 - Présent</span>
+                                <h4>BUT Informatique (2<sup>ème</sup> année)</h4>
+                                <p>IUT Gustave Eiffel - Noisy-le-Grand (93)<br>
+                                <small>Parcours : Réalisation d'applications (Conception, Dév, Validation).</small></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2021 - 2024</span>
+                                <h4>Baccalauréat STI2D</h4>
+                                <p>Lycée Évariste Galois - Noisy-le-Grand<br>
+                                <small>Option SIN (Système d'Information et Numérique) - Mention Bien</small></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2021</span>
+                                <h4>Brevet des Collèges</h4>
+                                <p>Collège Victor Hugo - Noisy-le-Grand<br>
+                                <small>Mention Bien</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+                
+                <div class="bento-col-side">
+
+                    <div class="bento-card info-card">
+                        <h3><i class="fas fa-regular fa-address-card"></i> Infos</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-envelope fixed-width"></i> alk.zhabrail@gmail.com</li>
+                            <li><i class="fas fa-map-marker-alt fixed-width"></i> Noisy-le-Grand (93)</li>
+                            <li><i class="fas fa-birthday-cake fixed-width"></i> 19 ans</li>
+                            <li><i class="fas fa-university fixed-width"></i> IUT Gustave Eiffel</li>
+                            <li style="margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+                                <i class="fas fa-language fixed-width" style="color:var(--secondary)"></i> 
+                                <strong>Langues :</strong> Anglais, Russe
+                            </li>
+                        </ul>
+                        <a href="Alkhastov_CV.pdf" class="btn-download" style="width:100%; justify-content:center; margin-top:15px;" download>
+                            <i class="fas fa-download"></i> Télécharger mon CV
+                        </a>
+                    </div>
+
+                    <div class="bento-card hobby-card">
+                        <h3><i class="fas fa-medal"></i> Esprit Compétitif</h3>
+                        <p style="margin-bottom:15px; font-size: 0.9rem; color: #ccc;">
+                            Pratiquant la <strong>Lutte Libre</strong> en compétition depuis 2019, 
+                            j'ai eu l'opportunité de participer à de nombreux tournois en France et à l'étranger. 
+                            Voici une sélection des médailles les plus marquantes de mon parcours :
+                        </p>
+                        
+                        <ul class="trophy-list">
+                            <li class="medal-bronze">
+                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi International Open Helsinki 2025 (Finlande)</span>
+                            </li>
+                            <li class="medal-bronze">
+                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Championnat de France 2025</span>
+                            </li>
+                            <li class="medal-gold">
+                                <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Senior)</span>
+                            </li>
+                            <li class="medal-bronze">
+                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi National Ranking Cenon 2025 (Junior)</span>
+                            </li>
+                            <li class="medal-gold">
+                                <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Junior)</span>
+                            </li>
+                            <li class="medal-silver">
+                                <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Senior)</span>
+                            </li>
+                            <li class="medal-silver">
+                                <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Junior)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bento-card vol-card">
+                        <h3><i class="fas fa-hands-helping"></i> Engagement</h3>
+                        <ul class="skill-list" style="margin-top:10px;">
+                            <li style="align-items:flex-start;">
+                                <i class="fas fa-flag-checkered" style="margin-top:5px;"></i>
+                                <div>
+                                    <strong>Arbitre & Chronométreur</strong><br>
+                                    <small>Respect des règles et impartialité lors des compétitions officielles.</small>
+                                </div>
+                            </li>
+                            <li style="align-items:flex-start;">
+                                <i class="fas fa-users" style="margin-top:5px;"></i>
+                                <div>
+                                    <strong>Bénévole Club</strong><br>
+                                    <small>Logistique Événementielle : aide à l'organisation logistique et encadrement des événements.</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bento-card skills-card">
+                        <h3><i class="fas fa-star"></i> Mes Qualités</h3>
+                        <div class="soft-skills-tags">
+                            <span><i class="fas fa-lightbulb"></i> Curiosité & Créativité</span>
+                            <span><i class="fas fa-users"></i> Esprit d'Équipe</span>
+                            <span><i class="fas fa-tasks"></i> Rigueur & Organisation</span>
+                            <span><i class="fas fa-rocket"></i> Autonomie</span>
+                            <span><i class="fas fa-brain"></i> Adaptabilité</span>
+                        </div>
+                    </div>
+
+                </div> 
+            </div>
+        </section>
+
+        <section id="connaissances" class="section">
+            <h2 class="section-title">Ma Stack Technique</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card card-dev">
+                    <div class="card-glow"></div> <h3><i class="fas fa-laptop-code"></i> Développement</h3>
+                    <p class="skill-intro">Langages de programmation.</p>
+                    
+                    <div class="tech-tags-wrapper">
+                        <span class="tag-pill tech-core"><i class="fab fa-java"></i> Java</span>
+                        <span class="tag-pill tech-core"><i class="fab fa-php"></i> PHP 8</span>
+                        <span class="tag-pill tech-core"><i class="fab fa-python"></i> Python</span>
+                        <span class="tag-pill tech-core">C (Sys)</span>
+                        
+                        <span class="tag-pill tech-web"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tag-pill tech-web"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+                        <span class="tag-pill tech-web">JavaFX</span>
+                        <span class="tag-pill tech-web"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        
+                        <span class="tag-pill tech-data"><i class="fas fa-database"></i> SQL</span>
+                        <span class="tag-pill tech-data">PL/SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card-ops">
+                    <div class="card-glow"></div>
+                    <h3><i class="fas fa-tools"></i> Environnement & DevOps</h3>
+                    <p class="skill-intro">Maîtrise de l'écosystème de production.</p>
+
+                    <div class="tech-tags-wrapper">
+                        <span class="tag-pill tool-git"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="tag-pill tool-ide">VSCode / IntelliJ</span>
+                        
+                        <span class="tag-pill tool-sys"><i class="fab fa-linux"></i> Linux / Bash</span>
+                        <span class="tag-pill tool-net">HTTP / DNS / TCP</span>
+                        <span class="tag-pill tool-sys">Apache Config</span>
+                        <span class="tag-pill tool-net">Wireshark</span>
+                        
+                        <span class="tag-pill tool-design"><i class="fab fa-figma"></i> Figma</span>
+                    </div>
+                </div>
+
+                <div class="skill-card card-arch">
+                    <div class="card-glow"></div>
+                    <h3><i class="fas fa-brain"></i> Architecture & Gestion</h3>
+                    <p class="skill-intro">Méthodologie et conception logicielle.</p>
+
+                    <div class="tech-tags-wrapper">
+                        <span class="tag-pill arch-method">Agile / Scrum</span>
+                        <span class="tag-pill arch-method">Travail d'équipe</span>
+                        
+                        <span class="tag-pill arch-concept">Architecture MVC</span>
+                        <span class="tag-pill arch-concept">UML / Merise</span>
+                        <span class="tag-pill arch-concept">Tests Unitaires</span>
+                        <span class="tag-pill arch-concept">Documentation</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="travaux" class="section">
+            <h2 class="section-title">Projets Réalisés</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/MyBrickStore-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Upload.png" alt="Upload"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Crop.png" alt="Crop"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Image.png" alt="Traitement Image"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Panier.png" alt="Panier"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Facture.png" alt="Facture"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Commande.png" alt="Commande"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Detail.png" alt="Détail"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Paramètre.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Dashboard.png" alt="Dashboard Admin"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Fournisseur.png" alt="Fournisseur"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Stock.png" alt="Stock"></li>
+                                <li class="slide"><img src="img/MyBrickStore-Matomo.png" alt="Matomo Analytics"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <img src="img/MyBrickStore-Logo.png">
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                    <span class="tag-pill tech">JavaScript</span>
+                                    <span class="tag-pill tech">Java</span>
+                                    <span class="tag-pill tech">MySQL</span>
+                                    <span class="tag-pill tech">C</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">phpMyAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Site E-commerce Fullstack complet.</strong><br>
+                                Ce projet complexe lie plusieurs langages : l'utilisateur upload une image, un programme en <strong>C</strong> propose 4 pavages spécifiques, <strong>Java</strong> traite l'image pour la pixeliser en mosaïque LEGO et commande les briques à l'usine, et le site <strong>PHP</strong> gère l'affichage, le panier et les commandes des pièces nécessaires.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/MyBrickStore" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component mode-contain">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/Tetris-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Tetris-Jeu.png" alt="Jeu Principal"></li>
+                                <li class="slide"><img src="img/Tetris-Jeu2.png" alt="Jeu Principal"></li>
+                                <li class="slide"><img src="img/Tetris-Defaite.png" alt="Defaite"></li>
+                                <li class="slide"><img src="img/Tetris-Pause.png" alt="Jeu en Pause"></li>
+                                <li class="slide"><img src="img/Tetris-Reprendre.png" alt="Reprende sauvegarde"></li>
+                                <li class="slide"><img src="img/Tetris-Multijoueur.png" alt="2 joueurs"></li>
+                                <li class="slide"><img src="img/Tetris-Bonus.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Tetris-Rotation.png" alt="Bonus Rotation"></li>
+                                <li class="slide"><img src="img/Tetris-Rotation2.png" alt="Bonus Rotation"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Tetris</h3>
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">Python</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">Spyder</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Jeu Tetris développé en Python.</strong><br>
+                                Implémentation complète des <strong>mécaniques du jeu</strong> : gestion des pièces, rotations, collisions, score, pause et fin de partie.
+                                Le projet inclut également un mode multijoueur et des bonus, avec une logique de jeu structurée et optimisée.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/Tetris" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/SafePay-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SafePay-Tresorerie.png" alt="Accuei"></li>
+                                <li class="slide"><img src="img/SafePay-Remises.png" alt="Remises"></li>
+                                <li class="slide"><img src="img/SafePay-Detail.png" alt="Detail des remises"></li>
+                                <li class="slide"><img src="img/SafePay-Impayes.png" alt="Impaués"></li>
+                                <li class="slide"><img src="img/SafePay-Dashboard.png" alt="Accueil PO"></li>
+                                <li class="slide"><img src="img/SafePay-RemisesPO.png" alt="Remises PO"></li>
+                                <li class="slide"><img src="img/SafePay-ImpayesPO.png" alt="Impayes PO"></li>
+                                <li class="slide"><img src="img/SafePay-Compte.png" alt="Envoi de requête à l'Admin"></li>
+                                <li class="slide"><img src="img/SafePay-Admin.png" alt="Admin accueil"></li>
+                                <li class="slide"><img src="img/SafePay-Comptes.png" alt="Admin visualisation des comptes"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <img src="img/SafePay-Logo.png">
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                    <span class="tag-pill tech">JavaScript</span>
+                                    <span class="tag-pill tech">MySQL</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">phpMyAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>SafePay – Portail de gestion des paiements par carte bancaire</strong>
+                                Projet réalisé en BUT Informatique (Qualité de développement) selon une méthode <strong>Agile Scrum.</strong>
+                                L’application permet la gestion sécurisée de la trésorerie, des remises et des impayés via des tableaux de bord, des graphiques statistiques et des exports de rapports (CSV, XLS, PDF).
+                                Le système intègre une gestion des rôles (Commerçant, Product Owner, Administrateur), des droits d’accès aux données, ainsi qu’un module d’authentification sécurisé.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/SafePay" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component mode-contain">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/Customizza-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/Customizza-Inscription.png" alt="inscription"></li>
+                                <li class="slide"><img src="img/Customizza-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Customizza-Catalogue.png" alt="catalogue"></li>
+                                <li class="slide"><img src="img/Customizza-Paramètre.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/Customizza-Paramètre2.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/Customizza-Composition.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza-Composition2.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza-Composition3.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza-Composition4.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza-Final.png" alt="Validation"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <img src="img/Customizza-Logo.png">
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">Java</span>
+                                    <span class="tag-pill tech">JavaFX</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">Eclipse</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Application de commande de pizzas personnalisées.</strong><br>
+                                Customizza permet à l’utilisateur de créer <strong>sa pizza</strong> sur mesure en choisissant la taille, la forme et les ingrédients.
+                                Le prix et les calories sont <strong></strong>calculés dynamiquement</strong> en fonction des choix effectués.
+                                L’application intègre un parcours complet : inscription, connexion, catalogue, composition et validation de commande,
+                                avec une interface graphique développée en <strong>JavaFX</strong>.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/Customizza" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/MurailleChine-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine-Accueil3.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire2.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire3.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire4.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire5.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire6.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire7.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire8.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire9.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire10.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Histoire11.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage2.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage3.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage4.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage5.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Voyage6.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine-Visiter.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine-Visiter2.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine-Visiter3.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine-Visiter4.png" alt="Visiter"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>La Grande Muraille de Chine</h3>
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Site vitrine de médiation culturelle et numérique.</strong><br>
+                                Ce projet consiste en la conception d’un site dédié à la découverte de <strong>la Grande Muraille de Chine</strong>,
+                                réalisé dans une démarche de valorisation du <strong>patrimoine culturel</strong>, en partenariat avec <strong>UNESCO</strong>.
+                                Le site propose plusieurs parcours utilisateurs : une section historique pour comprendre l’origine,
+                                l’évolution et les enjeux culturels de la Muraille, ainsi qu’une section dédiée aux visiteurs et voyageurs,
+                                fournissant des informations pratiques pour préparer une visite.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/La_Grande_Muraille_De_Chine" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/Yams-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Yams-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Yams-Jeu.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams-Jeu2.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams-Jeu3.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams-Jeu4.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams-multi.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams-Multi2.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams-Multi3.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams-Carte.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams-Carte2.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams-Carte3.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams-Bonus1.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams-Bonus.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams-Bonus2.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams-Bonus3.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams-Bonus4.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams-Credit.png" alt="Credits"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <img src="img/Yams-Logo.png">
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">Java</span>
+                                    <span class="tag-pill tech">JavaFX</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">Eclipse</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Yams – Jeu de dés avec système de bonus par cartes</strong>
+                                Développement d’un jeu de Yams intégrant les <strong>règles classiques</strong> (brelan, carré, full, suites, Yams…) ainsi qu’une extension stratégique basée sur des cartes à effets.
+                                Le joueur dispose de trois lancers par tour et doit optimiser ses choix de combinaisons tout en gérant des <strong>cartes bonus</strong> (relance supplémentaire, score doublé, dé additionnel, blocage adverse, etc.).
+                                Ce projet met en avant la gestion de règles de jeu, la logique métier, la prise de décision stratégique et l’implémentation de mécaniques avancées.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/Yams" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/Img2Brick-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Img2Brick-Accueil2.png" alt="Accueik"></li>
+                                <li class="slide"><img src="img/Img2Brick-Upload.png" alt="Upload"></li>
+                                <li class="slide"><img src="img/Img2Brick-Crop.png" alt="Crop"></li>
+                                <li class="slide"><img src="img/Img2Brick-Pavages.png" alt="Traitement Image"></li>
+                                <li class="slide"><img src="img/Img2Brick-Panier.png" alt="Panier"></li>
+                                <li class="slide"><img src="img/Img2Brick-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/Img2Brick-Inscription.png" alt="inscription"></li>
+                                <li class="slide"><img src="img/Img2Brick-Adresse.png" alt="Adresse"></li>
+                                <li class="slide"><img src="img/Img2Brick-Payement.png" alt="Payement"></li>
+                                <li class="slide"><img src="img/Img2Brick-Commande.png" alt="Commaned"></li>
+                                <li class="slide"><img src="img/Img2Brick-Detail.png" alt="Detail commande"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <img src="img/Img2Brick-Logo.png">
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                    <span class="tag-pill tech">JavaScript</span>
+                                    <span class="tag-pill tech">SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">phpMyAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                    <span class="tag-pill tool">Looping</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Site e-commerce de génération de pavages LEGO à partir d’images.</strong><br>
+                                Ce projet individuel, réalisé avant le projet <strong>MyBrickStore</strong>, constitue
+                                une première version fonctionnelle d’une plateforme e-commerce permettant de transformer
+                                une image en pavages de briques LEGO.
+                                <br><br>
+                                Développé uniquement en <strong>PHP, HTML, CSS et JavaScript</strong>, le site propose
+                                un parcours utilisateur complet : téléversement et recadrage d’image, génération de
+                                pavages simulés, gestion du panier, création de compte, paiement et suivi de commande.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/img2brick" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/SeniorMeet-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Profile.png" alt="Profil"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Messagerie.png" alt="messagerie"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Chat.png" alt="Chat"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Amis.png" alt="Amis"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Calendrier.png" alt="calendrier"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Evenement.png" alt="evenement"></li>
+                                <li class="slide"><img src="img/SeniorMeet-Ajouter.png" alt="Ajouter"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Senior Meet</h3>
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                    <span class="tag-pill tech">JavaScript</span>
+                                    <span class="tag-pill tech">SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">phpMyAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                    <span class="tag-pill tool">Looping</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Application web de rencontre amicale dédiée aux seniors.</strong><br>
+                                Ce projet, réalisé dans le cadre du BUT Informatique (Silver Economy),
+                                consiste en la conception d’un site web facilitant les <strong>échanges sociaux</strong>
+                                entre <strong>seniors</strong> à travers des rencontres, des événements et une messagerie dédiée.
+                                <br><br>
+                                La plateforme permet aux utilisateurs de créer un profil, s’inscrire à des
+                                événements, consulter un calendrier partagé, gérer un agenda personnel et
+                                échanger via un système de chat adapté. Une interface administrateur permet
+                                la gestion des comptes utilisateurs et la modération de la plateforme.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/Senior_Meet" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/SkiLowCost-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Tarif.png" alt="Tarif"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Tarif2.png" alt="Tarif"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Chambre.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Chambre2.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Reservation.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Reservation2.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Reservation3.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Client.png" alt="Client"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Groupe.png" alt="Groupe"></li>
+                                <li class="slide"><img src="img/SkiLowCost-GestChambre.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost-ReservationGestion.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Admin.png" alt="Admin"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Admin2.png" alt="Admin"></li>
+                                <li class="slide"><img src="img/SkiLowCost-Admin3.png" alt="Admin"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Zarza-Ski</h3>
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                    <span class="tag-pill tech">JavaScript</span>
+                                    <span class="tag-pill tech">SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">pgAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Figma</span>
+                                    <span class="tag-pill tool">Looping</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Application web de gestion de séjours de ski à bas prix.</strong><br>
+                                Ce projet consistait à concevoir une plateforme web pour la société <strong>Zarza-Ski</strong>, 
+                                spécialisée dans la réservation de séjours de ski économiques.
+                                <br><br>
+                                L’application permet aux clients de découvrir les offres, consulter les tarifs selon
+                                leurs profils (skieur, non-skieur, enfants, bébés), réserver des chambres et gérer
+                                les détails de leur séjour. Une interface gestionnaire est dédiée à l’administrateur
+                                pour suivre les réservations, attribuer les chambres selon les préférences et générer
+                                les factures.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/SkiLowCost" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-slider-component">
+                        <div class="slider-track-container">
+                            <ul class="slider-track">
+                                <li class="slide current-slide"><img src="img/Facturation-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Facturation-Client.png" alt="Gestion du client"></li>
+                                <li class="slide"><img src="img/Facturation-Avoir.png" alt="génération des avoirs"></li>
+                                <li class="slide"><img src="img/Facturation-phpMyAdmin.png" alt="Interface de la base de données"></li>
+                            </ul>
+                        </div>
+                        
+                        <button class="slider-btn slider--prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn slider--next"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="slider-dots-nav"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Facturation</h3>
+                        </div>
+
+                        <div class="tags-group-container">
+                            
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-code"></i> Stack :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tech">SQL</span>
+                                    <span class="tag-pill tech">PHP</span>
+                                    <span class="tag-pill tech">HTML</span>
+                                    <span class="tag-pill tech">CSS</span>
+                                </div>
+                            </div>
+
+                            <div class="tag-row">
+                                <span class="tag-label"><i class="fas fa-tools"></i> Outils :</span>
+                                <div class="tech-tags-wrapper">
+                                    <span class="tag-pill tool">GitHub</span>
+                                    <span class="tag-pill tool">phpMyAdmin</span>
+                                    <span class="tag-pill tool">VSCode</span>
+                                    <span class="tag-pill tool">Looping</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-description">
+                            <p>
+                                <strong>Application web de facturation.</strong><br>
+                                Ce projet backend avait pour objectif de concevoir un nouveau système de <strong>facturation</strong>
+                                pour une entreprise dont le logiciel historique n’était plus adapté à une utilisation web.
+                                La solution devait permettre l’émission automatique des factures directement depuis
+                                le site Internet, tout en conservant l’historique existant.
+                            </p>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="https://github.com/alkzhab/Facturation" target="_blank" class="project-link github-btn">
+                                Voir le Code <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
