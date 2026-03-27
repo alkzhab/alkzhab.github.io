@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafePay - Détails du Projet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projet.css"> 
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="background-glow"></div>
+    <div class="background-glow-2"></div>
+
+    <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au Portfolio</a>
+
+    <main class="project-container">
+
+        <header class="project-header-banner glass-panel reveal stagger-1">
+            <div class="header-content">
+                <div class="header-main">
+                    <div class="project-logo-wrapper">
+                        <i class="fa-solid fa-shield-halved" style="font-size: 4rem; color: var(--primary);"></i>
+                    </div>
+                    <div>
+                        <h1>SafePay</h1>
+                        <p class="subtitle">Portail de Gestion des Paiements</p>
+                    </div>
+                </div>
+                
+                <div class="header-meta">
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="far fa-calendar-alt"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Période</span>
+                            <strong>Sept. 2024 - Jan. 2025</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="fas fa-users"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Équipe</span>
+                            <strong>4 Développeurs</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="fas fa-tasks"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Méthode</span>
+                            <strong>Agile (Scrum)</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item highlight-role">
+                        <div class="meta-icon"><i class="fas fa-user-tag"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Rôle</span>
+                            <strong>Développeur Full-Stack</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-split-layout">
+            
+            <div class="project-description-box glass-panel reveal stagger-2">
+                <h2><i class="fas fa-info-circle"></i> Contexte & Objectifs</h2>
+                <div class="text-content">
+                    <p class="lead-text">
+                        SafePay est un portail de gestion des paiements par carte bancaire développé selon une méthode Agile Scrum. L'application permet aux commerçants de gérer leur trésorerie, visualiser leurs remises et suivre les impayés en temps réel.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h3>Objectifs & Enjeux</h3>
+                        <ul>
+                            <li><strong>Objectif Principal :</strong> Créer une plateforme sécurisée de gestion des paiements avec tableau de bord analytique et exports de rapports.</li>
+                            <li><strong>Enjeux Techniques :</strong> Assurer la sécurité des données financières, gérer les droits d'accès selon les rôles utilisateurs, et optimiser les performances des requêtes.</li>
+                        </ul>
+                    </div>
+
+                    <p>Les fonctionnalités principales incluent :</p>
+                    <ul class="step-list">
+                        <li>Tableau de bord avec statistiques en temps réel et graphiques interactifs.</li>
+                        <li>Gestion des remises bancaires et suivi détaillé des transactions.</li>
+                        <li>Module de gestion des impayés avec alertes et relances.</li>
+                        <li>Système de rôles : Commerçant, Product Owner, Administrateur.</li>
+                        <li>Exports multiformats : CSV, XLS, PDF pour les rapports.</li>
+                        <li>Authentification sécurisée avec gestion de sessions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-sidebar reveal stagger-3">
+                <div class="videos-section">
+                    
+                    <div class="video-wrapper glass-panel">
+                        <h3 class="video-title"><i class="fas fa-play-circle"></i> Démo Client</h3>
+                        <video controls poster="../img/SafePay/SafePay-Connexion.png">
+                            <source src="videos/SafePay.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                    </div>
+
+                </div>
+                <div class="action-stack glass-panel">
+                    <a href="https://github.com/alkzhab/SafePay" target="_blank" class="action-btn github">
+                        <i class="fab fa-github"></i>
+                        <span>Voir le dépôt</span>
+                        <i class="fas fa-external-link-alt small-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-deep-dive glass-panel reveal stagger-4">
+            <h2><i class="fas fa-microchip"></i> Technologies & Architecture</h2>
+            <div class="tech-grid">
+                <div class="tech-item tech-php">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fab fa-php"></i></div>
+                        <h3>Backend PHP</h3>
+                    </div>
+                    <p>Architecture MVC, gestion des sessions sécurisées, et génération de rapports PDF.</p>
+                </div>
+                <div class="tech-item tech-sql">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <h3>Base de Données MySQL</h3>
+                    </div>
+                    <p>Modélisation relationnelle : utilisateurs, transactions, remises, impayés.</p>
+                </div>
+                <div class="tech-item tech-java">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fab fa-js"></i></div>
+                        <h3>Frontend Dynamique</h3>
+                    </div>
+                    <p>HTML/CSS/JavaScript pour interface responsive et graphiques interactifs.</p>
+                </div>
+                <div class="tech-item tech-c">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Sécurité</h3>
+                    </div>
+                    <p>Authentification, hashage de mots de passe, protection contre les injections SQL.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section reveal stagger-5">
+            <h2><i class="fas fa-images"></i> Galerie du projet</h2>
+            
+            <div class="product-gallery-wrapper glass-panel">
+                
+                <div class="main-image-container">
+                    <div class="zoom-indicator"><i class="fas fa-expand-arrows-alt"></i> Agrandir</div>
+                    <img id="master-img" src="../img/SafePay/SafePay-Connexion.png" alt="Connexion SafePay">
+                </div>
+
+                <div class="thumbnails-track">
+                    <img class="thumb active" src="../img/SafePay/SafePay-Connexion.png" onclick="switchImage(this)" alt="Connexion">
+                    <img class="thumb" src="../img/SafePay/SafePay-Tresorerie.png" onclick="switchImage(this)" alt="Trésorerie">
+                    <img class="thumb" src="../img/SafePay/SafePay-Remises.png" onclick="switchImage(this)" alt="Remises">
+                    <img class="thumb" src="../img/SafePay/SafePay-Detail.png" onclick="switchImage(this)" alt="Détails">
+                    <img class="thumb" src="../img/SafePay/SafePay-Impayes.png" onclick="switchImage(this)" alt="Impayés">
+                    <img class="thumb" src="../img/SafePay/SafePay-Dashboard.png" onclick="switchImage(this)" alt="Dashboard">
+                    <img class="thumb" src="../img/SafePay/SafePay-RemisesPO.png" onclick="switchImage(this)" alt="Remises PO">
+                    <img class="thumb" src="../img/SafePay/SafePay-ImpayesPO.png" onclick="switchImage(this)" alt="Impayés PO">
+                    <img class="thumb" src="../img/SafePay/SafePay-Compte.png" onclick="switchImage(this)" alt="Compte">
+                    <img class="thumb" src="../img/SafePay/SafePay-Admin.png" onclick="switchImage(this)" alt="Admin">
+                    <img class="thumb" src="../img/SafePay/SafePay-Comptes.png" onclick="switchImage(this)" alt="Gestion Comptes">
+                </div>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>

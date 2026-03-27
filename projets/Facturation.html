@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturation - Détails du Projet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projet.css"> 
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="background-glow"></div>
+    <div class="background-glow-2"></div>
+
+    <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au Portfolio</a>
+
+    <main class="project-container">
+
+        <header class="project-header-banner glass-panel reveal stagger-1">
+            <div class="header-content">
+                <div class="header-main">
+                    <div class="project-logo-wrapper">
+                        <i class="fas fa-file-invoice-dollar" style="font-size: 4rem; color: var(--primary);"></i>
+                    </div>
+                    <div>
+                        <h1>Facturation</h1>
+                        <p class="subtitle">Application Web de Facturation</p>
+                    </div>
+                </div>
+                
+                <div class="header-meta">
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="far fa-calendar-alt"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Période</span>
+                            <strong>Déc. 2023 - Fév. 2024</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="fas fa-users"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Équipe</span>
+                            <strong>5 Développeurs</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item highlight-role">
+                        <div class="meta-icon"><i class="fas fa-user-tag"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Rôle</span>
+                            <strong>Développeur Full-Stack</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-split-layout">
+            
+            <div class="project-description-box glass-panel reveal stagger-2">
+                <h2><i class="fas fa-info-circle"></i> Contexte & Objectifs</h2>
+                <div class="text-content">
+                    <p class="lead-text">
+                        Ce projet backend a été réalisé pour moderniser le système de facturation d'une entreprise. L'objectif était de remplacer un logiciel historique inadapté au web par une solution permettant l'émission automatique de factures directement depuis le site Internet.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h3>Objectifs & Enjeux</h3>
+                        <ul>
+                            <li><strong>Objectif Principal :</strong> Concevoir un nouveau système de facturation web capable de générer automatiquement des factures tout en conservant l'historique existant.</li>
+                            <li><strong>Enjeux Techniques :</strong> Migrer les données historiques, assurer la conformité légale des factures, optimiser les performances et garantir la fiabilité du système.</li>
+                        </ul>
+                    </div>
+
+                    <p>Les fonctionnalités principales incluent :</p>
+                    <ul class="step-list">
+                        <li>Génération automatique de factures depuis le site web.</li>
+                        <li>Migration et conservation de l'historique de facturation.</li>
+                        <li>Gestion des clients et de leurs informations de facturation.</li>
+                        <li>Calcul automatique des montants HT, TVA et TTC.</li>
+                        <li>Export des factures au format PDF conforme.</li>
+                        <li>Tableau de bord pour le suivi des factures.</li>
+                        <li>Système de numérotation automatique et conforme.</li>
+                        <li>Recherche et filtrage avancés dans l'historique.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-sidebar reveal stagger-3">
+                <div class="action-stack glass-panel">
+                    <a href="https://github.com/alkzhab/Facturation" target="_blank" class="action-btn github">
+                        <i class="fab fa-github"></i>
+                        <span>Voir le dépôt</span>
+                        <i class="fas fa-external-link-alt small-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-deep-dive glass-panel reveal stagger-4">
+            <h2><i class="fas fa-microchip"></i> Technologies & Architecture</h2>
+            <div class="tech-grid">
+                <div class="tech-item tech-sql">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-database"></i></div>
+                        <h3>Base de Données SQL</h3>
+                    </div>
+                    <p>Modélisation pour factures, clients, articles et historique.</p>
+                </div>
+                <div class="tech-item tech-php">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fab fa-php"></i></div>
+                        <h3>Backend PHP</h3>
+                    </div>
+                    <p>Logique métier pour calculs, génération de factures et migration de données.</p>
+                </div>
+                <div class="tech-item tech-java">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-file-pdf"></i></div>
+                        <h3>Génération PDF</h3>
+                    </div>
+                    <p>Export de factures conformes aux normes légales.</p>
+                </div>
+                <div class="tech-item tech-c">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Sécurité & Fiabilité</h3>
+                    </div>
+                    <p>Système robuste avec sauvegarde et traçabilité complète.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section reveal stagger-5">
+            <h2><i class="fas fa-images"></i> Galerie du projet</h2>
+            
+            <div class="product-gallery-wrapper glass-panel">
+                
+                <div class="main-image-container">
+                    <div class="zoom-indicator"><i class="fas fa-expand-arrows-alt"></i> Agrandir</div>
+                    <img id="master-img" src="../img/Facturation/Facturation-Dashboard.png" alt="Dashboard Facturation">
+                </div>
+
+                <div class="thumbnails-track">
+                    <img class="thumb active" src="../img/Facturation/Facturation-Accueil.png" onclick="switchImage(this)" alt="Accueil">
+                    <img class="thumb" src="../img/Facturation/Facturation-Client.png" onclick="switchImage(this)" alt="Client">
+                    <img class="thumb" src="../img/Facturation/Facturation-Avoir.png" onclick="switchImage(this)" alt="génération des avoirs">
+                    <img class="thumb" src="../img/Facturation/Facturation-phpMyAdmin.png" onclick="switchImage(this)" alt="Interface">
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>

@@ -20,6 +20,7 @@
             <button class="nav-btn active" data-target="accueil"><i class="fas fa-home"></i> <span class="nav-text">Accueil</span></button>
             <button class="nav-btn" data-target="apropos"><i class="fas fa-user"></i> <span class="nav-text">À propos</span></button>
             <button class="nav-btn" data-target="connaissances"><i class="fas fa-code"></i> <span class="nav-text">Stack</span></button>
+            <button class="nav-btn" data-target="competences"><i class="fas fa-puzzle-piece"></i> <span class="nav-text">Compétences</span></button>
             <button class="nav-btn" data-target="travaux"><i class="fas fa-layer-group"></i> <span class="nav-text">Projets</span></button>
         </nav>
     </header>
@@ -68,15 +69,23 @@
                     <div class="bento-card bio-card">
                         <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
                         <h3><i class="fas fa-regular fa-user"></i> Mon Profil</h3>
-                        <p>
-                            Je m'appelle <strong>Alkhastov Zhabrail</strong>, étudiant en 2<sup>ème</sup> année de BUT Informatique à l'Université Gustave Eiffel.
-                            <br><br>
-                            Passionné par la technologie et les innovations numériques, j'ai choisi ce parcours pour développer des compétences en informatique notamment en programmation en apprenant divers langages de programmation.
-                            <br><br>
-                            Ce que j'aime dans ce domaine, c'est de concevoir et développer des projets technologiques, qu'il s'agisse de jeux, d'application ou de solutions sur mesure.
-                            <br><br>
-                            Curieux et motivé, je souhaite approfondir mes connaissances en programmation et développer des projets complexes pour élargir mes horizons dans ce domaine.
-                       </p>
+                        
+                        <div class="bio-wrapper" id="bioWrapper">
+                            <p>
+                                Je m'appelle <strong>Alkhastov Zhabrail</strong>, étudiant en 2<sup>ème</sup> année de BUT Informatique à l'Université Gustave Eiffel.
+                                <br><br>
+                                Passionné par la technologie et les innovations numériques, j'ai choisi ce parcours pour développer des compétences en informatique notamment en programmation en apprenant divers langages de programmation.
+                                <br><br>
+                                Ce que j'aime dans ce domaine, c'est de concevoir et développer des projets technologiques, qu'il s'agisse de jeux, d'application ou de solutions sur mesure.
+                                <br><br>
+                                Curieux et motivé, je souhaite approfondir mes connaissances en programmation et développer des projets complexes pour élargir mes horizons dans ce domaine.
+                            </p>
+                            <div class="bio-gradient"></div>
+                        </div>
+
+                        <button class="read-more-btn" id="readMoreBtn">
+                            <span>Lire la suite</span> <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <div class="bento-card goal-card">
@@ -160,35 +169,47 @@
 
                     <div class="bento-card hobby-card">
                         <h3><i class="fas fa-medal"></i> Esprit Compétitif</h3>
+                        
                         <p style="margin-bottom:15px; font-size: 0.9rem; color: #ccc;">
                             Pratiquant la <strong>Lutte Libre</strong> en compétition depuis 2019, 
                             j'ai eu l'opportunité de participer à de nombreux tournois en France et à l'étranger. 
-                            Voici une sélection des médailles les plus marquantes de mon parcours :
                         </p>
-                        
-                        <ul class="trophy-list">
-                            <li class="medal-bronze">
-                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi International Open Helsinki 2025 (Finlande)</span>
-                            </li>
-                            <li class="medal-bronze">
-                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Championnat de France 2025</span>
-                            </li>
-                            <li class="medal-gold">
-                                <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Senior)</span>
-                            </li>
-                            <li class="medal-bronze">
-                                <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi National Ranking Cenon 2025 (Junior)</span>
-                            </li>
-                            <li class="medal-gold">
-                                <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Junior)</span>
-                            </li>
-                            <li class="medal-silver">
-                                <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Senior)</span>
-                            </li>
-                            <li class="medal-silver">
-                                <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Junior)</span>
-                            </li>
-                        </ul>
+
+                        <div class="bio-wrapper" id="sportWrapper">
+                            <p style="margin-bottom:10px; font-size: 0.9rem; color: #ccc;">
+                                Voici une sélection des médailles les plus marquantes de mon parcours :
+                            </p>
+                            
+                            <ul class="trophy-list">
+                                <li class="medal-bronze">
+                                    <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi International Open Helsinki 2025</span>
+                                </li>
+                                <li class="medal-bronze">
+                                    <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Championnat de France 2025</span>
+                                </li>
+                                <li class="medal-gold">
+                                    <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Senior)</span>
+                                </li>
+                                <li class="medal-bronze">
+                                    <i class="fas fa-medal"></i> <span><strong>Bronze</strong> : Tournoi National Ranking Cenon 2025</span>
+                                </li>
+                                <li class="medal-gold">
+                                    <i class="fas fa-trophy"></i> <span><strong>Or</strong> : Île-de-France 2025 (Junior)</span>
+                                </li>
+                                <li class="medal-silver">
+                                    <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Senior)</span>
+                                </li>
+                                <li class="medal-silver">
+                                    <i class="fas fa-medal"></i> <span><strong>Argent</strong> : Île-de-France 2024 (Junior)</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="bio-gradient"></div>
+                        </div>
+
+                        <button class="read-more-btn" id="readMoreSportBtn">
+                            <span>Voir le palmarès</span> <i class="fas fa-chevron-down"></i>
+                        </button>
                     </div>
 
                     <div class="bento-card vol-card">
@@ -227,62 +248,137 @@
         </section>
 
         <section id="connaissances" class="section">
-            <h2 class="section-title">Ma Stack Technique</h2>
+            <h2 class="section-title">Mes connaissances</h2>
+            <p class="section-subtitle">Cliquez sur un langage pour voir mon expérience et les projets associés.</p>
 
-            <div class="skills-grid">
-
-                <div class="skill-card card-dev">
-                    <div class="card-glow"></div> <h3><i class="fas fa-laptop-code"></i> Développement</h3>
-                    <p class="skill-intro">Langages de programmation.</p>
-                    
-                    <div class="tech-tags-wrapper">
-                        <span class="tag-pill tech-core"><i class="fab fa-java"></i> Java</span>
-                        <span class="tag-pill tech-core"><i class="fab fa-php"></i> PHP 8</span>
-                        <span class="tag-pill tech-core"><i class="fab fa-python"></i> Python</span>
-                        <span class="tag-pill tech-core">C (Sys)</span>
-                        
-                        <span class="tag-pill tech-web"><i class="fab fa-js"></i> JavaScript</span>
-                        <span class="tag-pill tech-web"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
-                        <span class="tag-pill tech-web">JavaFX</span>
-                        <span class="tag-pill tech-web"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-                        
-                        <span class="tag-pill tech-data"><i class="fas fa-database"></i> SQL</span>
-                        <span class="tag-pill tech-data">PL/SQL</span>
+            <div class="expertise-grid">
+                <div class="expertise-card" data-lang="php">
+                    <div class="expertise-header">
+                        <i class="fab fa-php lang-icon" style="color: #777bb3;"></i>
+                        <h3>PHP & Web Backend</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="expertise-details">
+                        <p>Cœur de mes projets web, j'utilise le PHP pour concevoir des applications dynamiques et structurées. Je porte une attention particulière à la sécurité des échanges et à la mise en place d'architectures MVC permettant de séparer la logique métier de l'affichage.</p>
+                            <div class="proof-links">
+                            <span class="proof-label">Projets :</span>
+                            <a href="projets/MyBrickStore.html" class="proof-tag" onclick="filterAndScroll('web')">MyBrickStore</a>
+                            <a href="projets/SafePay.html" class="proof-tag" onclick="filterAndScroll('web')">SafePay</a>
+                            <a href="projets/Img2brick.html" class="proof-tag" onclick="filterAndScroll('web')">Img2Brick</a>
+                            <a href="projets/SeniorMeet.html" class="proof-tag" onclick="filterAndScroll('web')">Senior Meet</a>
+                            <a href="projets/Facturation.html" class="proof-tag" onclick="filterAndScroll('web')">Facturation</a>
+                            <a href="projets/SkiLowCost.html" class="proof-tag" onclick="filterAndScroll('web')">SkiLowCost</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card card-ops">
-                    <div class="card-glow"></div>
-                    <h3><i class="fas fa-tools"></i> Environnement & DevOps</h3>
-                    <p class="skill-intro">Maîtrise de l'écosystème de production.</p>
-
-                    <div class="tech-tags-wrapper">
-                        <span class="tag-pill tool-git"><i class="fab fa-git-alt"></i> Git & GitHub</span>
-                        <span class="tag-pill tool-ide">VSCode / IntelliJ</span>
-                        
-                        <span class="tag-pill tool-sys"><i class="fab fa-linux"></i> Linux / Bash</span>
-                        <span class="tag-pill tool-net">HTTP / DNS / TCP</span>
-                        <span class="tag-pill tool-sys">Apache Config</span>
-                        <span class="tag-pill tool-net">Wireshark</span>
-                        
-                        <span class="tag-pill tool-design"><i class="fab fa-figma"></i> Figma</span>
+                <div class="expertise-card" data-lang="java">
+                    <div class="expertise-header">
+                        <i class="fab fa-java lang-icon" style="color: #f89820;"></i>
+                        <h3>Java & POO</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="expertise-details">
+                        <p>Utilisé pour le développement d'applications logicielles robustes. Je mets en pratique les concepts avancés de la POO (encapsulation, héritage, polymorphisme) et je conçois des interfaces ergonomiques avec JavaFX pour répondre à des logiques métier complexes.</p>
+                        <div class="proof-links">
+                            <span class="proof-label">Projets :</span>
+                            <a href="projets/Customizza.html" class="proof-tag" onclick="filterAndScroll('app')">Customizza</a>
+                            <a href="projets/Yams.html" class="proof-tag" onclick="filterAndScroll('app')">Yams</a>
+                            <a href="projets/MyBrickStore.html" class="proof-tag" onclick="filterAndScroll('app')">MyBrickStore</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-card card-arch">
-                    <div class="card-glow"></div>
-                    <h3><i class="fas fa-brain"></i> Architecture & Gestion</h3>
-                    <p class="skill-intro">Méthodologie et conception logicielle.</p>
-
-                    <div class="tech-tags-wrapper">
-                        <span class="tag-pill arch-method">Agile / Scrum</span>
-                        <span class="tag-pill arch-method">Travail d'équipe</span>
-                        
-                        <span class="tag-pill arch-concept">Architecture MVC</span>
-                        <span class="tag-pill arch-concept">UML / Merise</span>
-                        <span class="tag-pill arch-concept">Tests Unitaires</span>
-                        <span class="tag-pill arch-concept">Documentation</span>
+                <div class="expertise-card" data-lang="sql">
+                    <div class="expertise-header">
+                        <i class="fas fa-database lang-icon" style="color: #38bdf8;"></i>
+                        <h3>Bases de données (SQL)</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
                     </div>
+                    <div class="expertise-details">
+                        <p>La gestion des données est au centre de mes développements. De la modélisation conceptuelle (MCD) à l'optimisation de requêtes SQL complexes, je m'assure de l'intégrité et de la performance des données stockées.</p>
+                        <div class="proof-links">
+                            <span class="proof-label">Projets :</span>
+                            <a href="projets/MyBrickStore.html" class="proof-tag" onclick="filterAndScroll('web')">MyBrickStore</a>
+                            <a href="projets/Facturation.html" class="proof-tag" onclick="filterAndScroll('web')">Facturation</a>
+                            <a href="projets/SafePay.html" class="proof-tag" onclick="filterAndScroll('web')">SafePay</a>
+                            <a href="projets/Img2brick.html" class="proof-tag" onclick="filterAndScroll('web')">Img2Brick</a>
+                            <a href="projets/SeniorMeet.html" class="proof-tag" onclick="filterAndScroll('web')">Senior Meet</a>
+                            <a href="projets/SkiLowCost.html" class="proof-tag" onclick="filterAndScroll('web')">SkiLowCost</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-card" data-lang="logic">
+                    <div class="expertise-header">
+                        <i class="fas fa-microchip lang-icon" style="color: #c084fc;"></i>
+                        <h3>Algorithmique & Bas Niveau</h3>
+                        <i class="fas fa-plus toggle-icon"></i>
+                    </div>
+                    <div class="expertise-details">
+                        <p>Ces langages me permettent de renforcer ma logique de programmation. Que ce soit pour résoudre des problèmes algorithmiques complexes en Python ou pour manipuler la mémoire et le système en C, j'adapte l'outil au besoin technique.</p>
+                        <div class="proof-links">
+                            <span class="proof-label">Projets :</span>
+                            <a href="projets/Tetris.html" class="proof-tag" onclick="filterAndScroll('app')">Tetris</a>
+                            <a href="projets/MyBrickStore.html" class="proof-tag" onclick="filterAndScroll('app')">MyBrickStore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section">
+            <h2 class="section-title">Mes Compétences</h2>
+            <p class="section-subtitle">Les 6 blocs de compétences du BUT Informatique - Parcours Réalisation d'applications.</p>
+
+            <div class="competences-grid">
+                
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-laptop-code" style="color: var(--primary);"></i></div>
+                    <h3>Réaliser</h3>
+                    <p>Concevoir, coder, tester et intégrer une solution informatique répondant aux besoins clients.</p>
+                    <p>Partir des exigences et aller jusqu’à une application complète</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/realiser.html'">En savoir plus</button>
+                </div>
+
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-tachometer-alt" style="color: #f89820;"></i></div>
+                    <h3>Optimiser</h3>
+                    <p>Proposer des applications optimisées (temps d'exécution, précision, ressources matérielles).</p>
+                    <p>Sélectionner les algorithmes adéquats pour répondre à un problème donné</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/optimiser.html'">En savoir plus</button>
+                </div>
+
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-server" style="color: #c084fc;"></i></div>
+                    <h3>Administrer</h3>
+                    <p>Installer, configurer et maintenir en conditions opérationnelles des infrastructures et réseaux.</p>
+                    <p>Déployer des services dans une architecture réseau</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/administrer.html'">En savoir plus</button>
+                </div>
+
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-database" style="color: #4ade80;"></i></div>
+                    <h3>Gérer</h3>
+                    <p>Concevoir, administrer et exploiter les bases de données pour le pilotage de l'activité.</p>
+                    <p>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/gerer.html'">En savoir plus</button>
+                </div>
+
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-project-diagram" style="color: #f472b6;"></i></div>
+                    <h3>Conduire</h3>
+                    <p>Organiser et piloter un projet informatique avec des méthodes classiques ou agiles (Scrum).</p>
+                    <p>Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/conduire.html'">En savoir plus</button>
+                </div>
+
+                <div class="competence-square-card">
+                    <div class="comp-icon"><i class="fas fa-users" style="color: #fbbf24;"></i></div>
+                    <h3>Collaborer</h3>
+                    <p>Travailler efficacement dans une équipe informatique (communication, droit, anglais technique).</p>
+                    <p>Situer son rôle et ses missions au sein d’une équipe informatique</p>
+                    <button class="cta-btn secondary comp-btn" onclick="window.location.href='competences/collaborer.html'">En savoir plus</button>
                 </div>
 
             </div>
@@ -296,20 +392,20 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/MyBrickStore-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Upload.png" alt="Upload"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Crop.png" alt="Crop"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Image.png" alt="Traitement Image"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Panier.png" alt="Panier"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Facture.png" alt="Facture"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Commande.png" alt="Commande"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Detail.png" alt="Détail"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Paramètre.png" alt="Paramètres"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Dashboard.png" alt="Dashboard Admin"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Fournisseur.png" alt="Fournisseur"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Stock.png" alt="Stock"></li>
-                                <li class="slide"><img src="img/MyBrickStore-Matomo.png" alt="Matomo Analytics"></li>
+                                <li class="slide current-slide"><img src="img/MyBrickStore/MyBrickStore-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Upload.png" alt="Upload"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Crop.png" alt="Crop"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Image.png" alt="Traitement Image"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Panier.png" alt="Panier"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Facture.png" alt="Facture"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Commande.png" alt="Commande"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Detail.png" alt="Détail"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Paramètre.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Dashboard.png" alt="Dashboard Admin"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Fournisseur.png" alt="Fournisseur"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Stock.png" alt="Stock"></li>
+                                <li class="slide"><img src="img/MyBrickStore/MyBrickStore-Matomo.png" alt="Matomo Analytics"></li>
                             </ul>
                         </div>
                         
@@ -321,7 +417,8 @@
 
                     <div class="project-content">
                         <div class="project-header">
-                            <img src="img/MyBrickStore-Logo.png">
+                            <h3>MyBrickStore</h3>
+                            <i class="fas fa-shopping-cart project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -361,6 +458,9 @@
                             <a href="https://github.com/alkzhab/MyBrickStore" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/MyBrickStore.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -369,16 +469,16 @@
                     <div class="project-slider-component mode-contain">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/Tetris-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Tetris-Jeu.png" alt="Jeu Principal"></li>
-                                <li class="slide"><img src="img/Tetris-Jeu2.png" alt="Jeu Principal"></li>
-                                <li class="slide"><img src="img/Tetris-Defaite.png" alt="Defaite"></li>
-                                <li class="slide"><img src="img/Tetris-Pause.png" alt="Jeu en Pause"></li>
-                                <li class="slide"><img src="img/Tetris-Reprendre.png" alt="Reprende sauvegarde"></li>
-                                <li class="slide"><img src="img/Tetris-Multijoueur.png" alt="2 joueurs"></li>
-                                <li class="slide"><img src="img/Tetris-Bonus.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Tetris-Rotation.png" alt="Bonus Rotation"></li>
-                                <li class="slide"><img src="img/Tetris-Rotation2.png" alt="Bonus Rotation"></li>
+                                <li class="slide current-slide"><img src="img/Tetris/Tetris-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Jeu.png" alt="Jeu Principal"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Jeu2.png" alt="Jeu Principal"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Defaite.png" alt="Defaite"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Pause.png" alt="Jeu en Pause"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Reprendre.png" alt="Reprende sauvegarde"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Multijoueur.png" alt="2 joueurs"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Bonus.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Rotation.png" alt="Bonus Rotation"></li>
+                                <li class="slide"><img src="img/Tetris/Tetris-Rotation2.png" alt="Bonus Rotation"></li>
                             </ul>
                         </div>
                         
@@ -391,6 +491,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Tetris</h3>
+                            <i class="fab fa-python" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -423,6 +524,9 @@
                             <a href="https://github.com/alkzhab/Tetris" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/Tetris.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -431,17 +535,17 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/SafePay-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/SafePay-Tresorerie.png" alt="Accuei"></li>
-                                <li class="slide"><img src="img/SafePay-Remises.png" alt="Remises"></li>
-                                <li class="slide"><img src="img/SafePay-Detail.png" alt="Detail des remises"></li>
-                                <li class="slide"><img src="img/SafePay-Impayes.png" alt="Impaués"></li>
-                                <li class="slide"><img src="img/SafePay-Dashboard.png" alt="Accueil PO"></li>
-                                <li class="slide"><img src="img/SafePay-RemisesPO.png" alt="Remises PO"></li>
-                                <li class="slide"><img src="img/SafePay-ImpayesPO.png" alt="Impayes PO"></li>
-                                <li class="slide"><img src="img/SafePay-Compte.png" alt="Envoi de requête à l'Admin"></li>
-                                <li class="slide"><img src="img/SafePay-Admin.png" alt="Admin accueil"></li>
-                                <li class="slide"><img src="img/SafePay-Comptes.png" alt="Admin visualisation des comptes"></li>
+                                <li class="slide current-slide"><img src="img/SafePay/SafePay-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Tresorerie.png" alt="Accuei"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Remises.png" alt="Remises"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Detail.png" alt="Detail des remises"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Impayes.png" alt="Impaués"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Dashboard.png" alt="Accueil PO"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-RemisesPO.png" alt="Remises PO"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-ImpayesPO.png" alt="Impayes PO"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Compte.png" alt="Envoi de requête à l'Admin"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Admin.png" alt="Admin accueil"></li>
+                                <li class="slide"><img src="img/SafePay/SafePay-Comptes.png" alt="Admin visualisation des comptes"></li>
                             </ul>
                         </div>
                         
@@ -453,7 +557,8 @@
 
                     <div class="project-content">
                         <div class="project-header">
-                            <img src="img/SafePay-Logo.png">
+                            <h3>SafePay</h3>
+                            <i class="fa-solid fa-shield-halved project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -493,6 +598,9 @@
                             <a href="https://github.com/alkzhab/SafePay" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/SafePay.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -501,17 +609,17 @@
                     <div class="project-slider-component mode-contain">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/Customizza-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/Customizza-Inscription.png" alt="inscription"></li>
-                                <li class="slide"><img src="img/Customizza-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Customizza-Catalogue.png" alt="catalogue"></li>
-                                <li class="slide"><img src="img/Customizza-Paramètre.png" alt="Paramètres"></li>
-                                <li class="slide"><img src="img/Customizza-Paramètre2.png" alt="Paramètres"></li>
-                                <li class="slide"><img src="img/Customizza-Composition.png" alt="composition"></li>
-                                <li class="slide"><img src="img/Customizza-Composition2.png" alt="composition"></li>
-                                <li class="slide"><img src="img/Customizza-Composition3.png" alt="composition"></li>
-                                <li class="slide"><img src="img/Customizza-Composition4.png" alt="composition"></li>
-                                <li class="slide"><img src="img/Customizza-Final.png" alt="Validation"></li>
+                                <li class="slide current-slide"><img src="img/Customizza/Customizza-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Inscription.png" alt="inscription"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Catalogue.png" alt="catalogue"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Paramètre.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Paramètre2.png" alt="Paramètres"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Composition.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Composition2.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Composition3.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Composition4.png" alt="composition"></li>
+                                <li class="slide"><img src="img/Customizza/Customizza-Final.png" alt="Validation"></li>
                             </ul>
                         </div>
                         
@@ -523,7 +631,8 @@
 
                     <div class="project-content">
                         <div class="project-header">
-                            <img src="img/Customizza-Logo.png">
+                            <h3>Customizza</h3>
+                            <i class="fas fa-sliders-h project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -560,6 +669,9 @@
                             <a href="https://github.com/alkzhab/Customizza" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/Customizza.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -568,30 +680,30 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/MurailleChine-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/MurailleChine-Accueil2.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/MurailleChine-Accueil3.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire2.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire3.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire4.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire5.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire6.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire7.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire8.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire9.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire10.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Histoire11.png" alt="Histoire"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage2.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage3.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage4.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage5.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Voyage6.png" alt="Voyage"></li>
-                                <li class="slide"><img src="img/MurailleChine-Visiter.png" alt="Visiter"></li>
-                                <li class="slide"><img src="img/MurailleChine-Visiter2.png" alt="Visiter"></li>
-                                <li class="slide"><img src="img/MurailleChine-Visiter3.png" alt="Visiter"></li>
-                                <li class="slide"><img src="img/MurailleChine-Visiter4.png" alt="Visiter"></li>
+                                <li class="slide current-slide"><img src="img/MurailleChine/MurailleChine-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Accueil3.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire2.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire3.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire4.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire5.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire6.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire7.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire8.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire9.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire10.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Histoire11.png" alt="Histoire"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage2.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage3.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage4.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage5.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Voyage6.png" alt="Voyage"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Visiter.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Visiter2.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Visiter3.png" alt="Visiter"></li>
+                                <li class="slide"><img src="img/MurailleChine/MurailleChine-Visiter4.png" alt="Visiter"></li>
                             </ul>
                         </div>
                         
@@ -604,6 +716,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>La Grande Muraille de Chine</h3>
+                            <i class="fas fa-landmark project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -641,6 +754,9 @@
                             <a href="https://github.com/alkzhab/La_Grande_Muraille_De_Chine" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/MurailleChine.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -649,24 +765,24 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/Yams-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Yams-Accueil2.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Yams-Jeu.png" alt="Jeu"></li>
-                                <li class="slide"><img src="img/Yams-Jeu2.png" alt="Jeu"></li>
-                                <li class="slide"><img src="img/Yams-Jeu3.png" alt="Jeu"></li>
-                                <li class="slide"><img src="img/Yams-Jeu4.png" alt="Jeu"></li>
-                                <li class="slide"><img src="img/Yams-multi.png" alt="2 Joueurs"></li>
-                                <li class="slide"><img src="img/Yams-Multi2.png" alt="2 Joueurs"></li>
-                                <li class="slide"><img src="img/Yams-Multi3.png" alt="2 Joueurs"></li>
-                                <li class="slide"><img src="img/Yams-Carte.png" alt="Carte"></li>
-                                <li class="slide"><img src="img/Yams-Carte2.png" alt="Carte"></li>
-                                <li class="slide"><img src="img/Yams-Carte3.png" alt="Carte"></li>
-                                <li class="slide"><img src="img/Yams-Bonus1.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Yams-Bonus.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Yams-Bonus2.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Yams-Bonus3.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Yams-Bonus4.png" alt="Bonus"></li>
-                                <li class="slide"><img src="img/Yams-Credit.png" alt="Credits"></li>
+                                <li class="slide current-slide"><img src="img/Yams/Yams-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Jeu.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Jeu2.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Jeu3.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Jeu4.png" alt="Jeu"></li>
+                                <li class="slide"><img src="img/Yams/Yams-multi.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Multi2.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Multi3.png" alt="2 Joueurs"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Carte.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Carte2.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Carte3.png" alt="Carte"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Bonus1.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Bonus.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Bonus2.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Bonus3.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Bonus4.png" alt="Bonus"></li>
+                                <li class="slide"><img src="img/Yams/Yams-Credit.png" alt="Credits"></li>
                             </ul>
                         </div>
                         
@@ -678,7 +794,8 @@
 
                     <div class="project-content">
                         <div class="project-header">
-                            <img src="img/Yams-Logo.png">
+                            <h3>Yams</h3>
+                            <i class="fas fa-dice project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -714,6 +831,9 @@
                             <a href="https://github.com/alkzhab/Yams" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/Yams.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -722,18 +842,18 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/Img2Brick-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Img2Brick-Accueil2.png" alt="Accueik"></li>
-                                <li class="slide"><img src="img/Img2Brick-Upload.png" alt="Upload"></li>
-                                <li class="slide"><img src="img/Img2Brick-Crop.png" alt="Crop"></li>
-                                <li class="slide"><img src="img/Img2Brick-Pavages.png" alt="Traitement Image"></li>
-                                <li class="slide"><img src="img/Img2Brick-Panier.png" alt="Panier"></li>
-                                <li class="slide"><img src="img/Img2Brick-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/Img2Brick-Inscription.png" alt="inscription"></li>
-                                <li class="slide"><img src="img/Img2Brick-Adresse.png" alt="Adresse"></li>
-                                <li class="slide"><img src="img/Img2Brick-Payement.png" alt="Payement"></li>
-                                <li class="slide"><img src="img/Img2Brick-Commande.png" alt="Commaned"></li>
-                                <li class="slide"><img src="img/Img2Brick-Detail.png" alt="Detail commande"></li>
+                                <li class="slide current-slide"><img src="img/Img2Brick/Img2Brick-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Accueil2.png" alt="Accueik"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Upload.png" alt="Upload"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Crop.png" alt="Crop"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Pavages.png" alt="Traitement Image"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Panier.png" alt="Panier"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Inscription.png" alt="inscription"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Adresse.png" alt="Adresse"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Payement.png" alt="Payement"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Commande.png" alt="Commaned"></li>
+                                <li class="slide"><img src="img/Img2Brick/Img2Brick-Detail.png" alt="Detail commande"></li>
                             </ul>
                         </div>
                         
@@ -745,7 +865,8 @@
 
                     <div class="project-content">
                         <div class="project-header">
-                            <img src="img/Img2Brick-Logo.png">
+                            <h3>Img2Brick</h3>
+                            <i class="fas fa-images project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -790,6 +911,9 @@
                             <a href="https://github.com/alkzhab/img2brick" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/Img2brick.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -798,16 +922,16 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/SeniorMeet-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Accueil2.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Profile.png" alt="Profil"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Messagerie.png" alt="messagerie"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Chat.png" alt="Chat"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Amis.png" alt="Amis"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Calendrier.png" alt="calendrier"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Evenement.png" alt="evenement"></li>
-                                <li class="slide"><img src="img/SeniorMeet-Ajouter.png" alt="Ajouter"></li>
+                                <li class="slide current-slide"><img src="img/SeniorMeet/SeniorMeet-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Profile.png" alt="Profil"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Messagerie.png" alt="messagerie"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Chat.png" alt="Chat"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Amis.png" alt="Amis"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Calendrier.png" alt="calendrier"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Evenement.png" alt="evenement"></li>
+                                <li class="slide"><img src="img/SeniorMeet/SeniorMeet-Ajouter.png" alt="Ajouter"></li>
                             </ul>
                         </div>
                         
@@ -820,6 +944,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Senior Meet</h3>
+                            <i class="fas fa-hands-helping project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -865,6 +990,9 @@
                             <a href="https://github.com/alkzhab/Senior_Meet" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/SeniorMeet.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -873,23 +1001,23 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/SkiLowCost-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Accueil2.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Tarif.png" alt="Tarif"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Tarif2.png" alt="Tarif"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Chambre.png" alt="Chambre"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Chambre2.png" alt="Chambre"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Reservation.png" alt="Reservation"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Reservation2.png" alt="Reservation"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Reservation3.png" alt="Reservation"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Connexion.png" alt="Connexion"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Client.png" alt="Client"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Groupe.png" alt="Groupe"></li>
-                                <li class="slide"><img src="img/SkiLowCost-GestChambre.png" alt="Chambre"></li>
-                                <li class="slide"><img src="img/SkiLowCost-ReservationGestion.png" alt="Reservation"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Admin.png" alt="Admin"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Admin2.png" alt="Admin"></li>
-                                <li class="slide"><img src="img/SkiLowCost-Admin3.png" alt="Admin"></li>
+                                <li class="slide current-slide"><img src="img/SkiLowCost/SkiLowCost-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Accueil2.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Tarif.png" alt="Tarif"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Tarif2.png" alt="Tarif"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Chambre.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Chambre2.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Reservation.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Reservation2.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Reservation3.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Connexion.png" alt="Connexion"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Client.png" alt="Client"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Groupe.png" alt="Groupe"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-GestChambre.png" alt="Chambre"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-ReservationGestion.png" alt="Reservation"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Admin.png" alt="Admin"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Admin2.png" alt="Admin"></li>
+                                <li class="slide"><img src="img/SkiLowCost/SkiLowCost-Admin3.png" alt="Admin"></li>
                             </ul>
                         </div>
                         
@@ -902,6 +1030,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Zarza-Ski</h3>
+                            <i class="fas fa-mountain project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -947,6 +1076,9 @@
                             <a href="https://github.com/alkzhab/SkiLowCost" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/SkiLowCost.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </article>
@@ -955,10 +1087,10 @@
                     <div class="project-slider-component">
                         <div class="slider-track-container">
                             <ul class="slider-track">
-                                <li class="slide current-slide"><img src="img/Facturation-Accueil.png" alt="Accueil"></li>
-                                <li class="slide"><img src="img/Facturation-Client.png" alt="Gestion du client"></li>
-                                <li class="slide"><img src="img/Facturation-Avoir.png" alt="génération des avoirs"></li>
-                                <li class="slide"><img src="img/Facturation-phpMyAdmin.png" alt="Interface de la base de données"></li>
+                                <li class="slide current-slide"><img src="img/Facturation/Facturation-Accueil.png" alt="Accueil"></li>
+                                <li class="slide"><img src="img/Facturation/Facturation-Client.png" alt="Gestion du client"></li>
+                                <li class="slide"><img src="img/Facturation/Facturation-Avoir.png" alt="génération des avoirs"></li>
+                                <li class="slide"><img src="img/Facturation/Facturation-phpMyAdmin.png" alt="Interface de la base de données"></li>
                             </ul>
                         </div>
                         
@@ -971,6 +1103,7 @@
                     <div class="project-content">
                         <div class="project-header">
                             <h3>Facturation</h3>
+                            <i class="fas fa-file-invoice-dollar project-icon" style="color: var(--primary); font-size: 1.4rem;"></i>
                         </div>
 
                         <div class="tags-group-container">
@@ -1010,6 +1143,9 @@
                             <a href="https://github.com/alkzhab/Facturation" target="_blank" class="project-link github-btn">
                                 Voir le Code <i class="fab fa-github"></i>
                             </a>
+                            <a href="projets/Facturation.html" class="project-link details-btn">
+                                En savoir plus <i class="fas fa-arrow-right"></i>
+                            </a>    
                         </div>
                     </div>
                 </article>

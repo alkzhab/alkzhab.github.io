@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Détails du Projet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projet.css"> 
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="background-glow"></div>
+    <div class="background-glow-2"></div>
+
+    <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Retour au Portfolio</a>
+
+    <main class="project-container">
+
+        <header class="project-header-banner glass-panel reveal stagger-1">
+            <div class="header-content">
+                <div class="header-main">
+                    <div class="project-logo-wrapper">
+                        <i class="fab fa-python" style="font-size: 4rem; color: var(--primary);"></i>
+                    </div>
+                    <div>
+                        <h1>Tetris</h1>
+                        <p class="subtitle">Jeu d'Arcade Python</p>
+                    </div>
+                </div>
+                
+                <div class="header-meta">
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="far fa-calendar-alt"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Période</span>
+                            <strong>Oct. 2024 - Déc. 2024</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-icon"><i class="fas fa-users"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Équipe</span>
+                            <strong>2 Développeurs</strong>
+                        </div>
+                    </div>
+                    <div class="meta-item highlight-role">
+                        <div class="meta-icon"><i class="fas fa-user-tag"></i></div>
+                        <div class="meta-text">
+                            <span class="meta-label">Rôle</span>
+                            <strong>Développeur</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="project-split-layout">
+            
+            <div class="project-description-box glass-panel reveal stagger-2">
+                <h2><i class="fas fa-info-circle"></i> Contexte & Objectifs</h2>
+                <div class="text-content">
+                    <p class="lead-text">
+                        Développement complet du célèbre jeu de puzzle Tetris en Python. Le projet vise à recréer l'expérience arcade authentique tout en ajoutant des fonctionnalités modernes comme le multijoueur et des bonus de jeu.    
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h3>Objectifs & Enjeux</h3>
+                        <ul>
+                            <li><strong>Objectif Principal :</strong> Implémenter une boucle de jeu fluide, gérer la logique complexe des matrices (grille) et assurer une expérience utilisateur réactive.</li>
+                            <li><strong>Enjeux Techniques :</strong> Gestion précise des collisions, algorithmes de rotation des pièces, et gestion des états du jeu (pause, sauvegarde, fin de partie).</li>
+                        </ul>
+                    </div>
+
+                    <p>La structure du jeu repose sur une logique modulaire :</p>
+                    <ul class="step-list">
+                        <li>Gestion de la grille et des collisions via des matrices.</li>
+                        <li>Boucle principale gérant le temps et les événements (inputs).</li>
+                        <li>Système de score dynamique et augmentation de la difficulté.</li>
+                        <li>Module de sauvegarde pour reprendre une partie en cours.</li>
+                        <li>Gestion du mode multijoueur local et des bonus.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-sidebar reveal stagger-3">
+                <div class="videos-section">
+                    
+                    <div class="video-wrapper glass-panel">
+                        <h3 class="video-title"><i class="fas fa-play-circle"></i> Démo du jeu</h3>
+                        <video controls poster="../img/Tetris/Tetris-Accueil.png">
+                            <source src="videos/Tetris.webm" type="video/webm">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                    </div>
+
+                </div>
+                <div class="action-stack glass-panel">
+                    <a href="https://github.com/alkzhab/Tetris" target="_blank" class="action-btn github">
+                        <i class="fab fa-github"></i>
+                        <span>Voir le dépôt</span>
+                        <i class="fas fa-external-link-alt small-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-deep-dive glass-panel reveal stagger-4">
+            <h2><i class="fas fa-microchip"></i> Technologies & Architecture</h2>
+            <div class="tech-grid">
+                <div class="tech-item tech-php">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                    </div>
+                    <p>Utilisation de Pygame pour le rendu graphique et la gestion des événements.</p>
+                </div>
+                <div class="tech-item tech-java">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Logique de Jeu</h3>
+                    </div>
+                    <p>Algorithmes de collision, rotation des pièces et gestion de l'état du jeu.</p>
+                </div>
+                <div class="tech-item tech-sql">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-save"></i></div>
+                        <h3>Sauvegarde</h3>
+                    </div>
+                    <p>Système de sauvegarde et chargement de parties en cours.</p>
+                </div>
+                <div class="tech-item tech-c">
+                    <div class="tech-header">
+                        <div class="tech-icon"><i class="fas fa-users"></i></div>
+                        <h3>Multijoueur</h3>
+                    </div>
+                    <p>Mode deux joueurs en local avec gestion simultanée des grilles.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery-section reveal stagger-5">
+            <h2><i class="fas fa-images"></i> Galerie du projet</h2>
+            
+            <div class="product-gallery-wrapper glass-panel">
+                
+                <div class="main-image-container">
+                    <div class="zoom-indicator"><i class="fas fa-expand-arrows-alt"></i> Agrandir</div>
+                    <img id="master-img" src="../img/Tetris/Tetris-Accueil.png" alt="Accueil Tetris">
+                </div>
+
+                <div class="thumbnails-track">
+                    <img class="thumb active" src="../img/Tetris/Tetris-Accueil.png" onclick="switchImage(this)" alt="Accueil">
+                    <img class="thumb" src="../img/Tetris/Tetris-Jeu.png" onclick="switchImage(this)" alt="Jeu Principal">
+                    <img class="thumb" src="../img/Tetris/Tetris-Jeu2.png" onclick="switchImage(this)" alt="Gameplay">
+                    <img class="thumb" src="../img/Tetris/Tetris-Defaite.png" onclick="switchImage(this)" alt="Défaite">
+                    <img class="thumb" src="../img/Tetris/Tetris-Pause.png" onclick="switchImage(this)" alt="Pause">
+                    <img class="thumb" src="../img/Tetris/Tetris-Reprendre.png" onclick="switchImage(this)" alt="Reprendre">
+                    <img class="thumb" src="../img/Tetris/Tetris-Multijoueur.png" onclick="switchImage(this)" alt="Multijoueur">
+                    <img class="thumb" src="../img/Tetris/Tetris-Bonus.png" onclick="switchImage(this)" alt="Bonus">
+                    <img class="thumb" src="../img/Tetris/Tetris-Rotation.png" onclick="switchImage(this)" alt="Rotation">
+                    <img class="thumb" src="../img/Tetris/Tetris-Rotation2.png" onclick="switchImage(this)" alt="Rotation 2">
+                </div>
+
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
